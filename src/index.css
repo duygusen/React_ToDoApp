@@ -1,10 +1,110 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-image: url("file:///C:/Users/duygu/OneDrive/Masaüstü/React/react/todo_backround.jpg");
+  background-size: 100% 100%;
+}
+
+h1{
+  margin-top: 30px !important;
+}
+
+.todo-title {
+  color: #000c08;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.todo-title::before,
+.todo-title::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #333;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.todo-title::before {
+  left: 0;
+}
+
+.todo-title::after {
+  right: 0;
+}
+
+form{
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  margin-bottom: 10px ;
+  margin-right: 50px;
+  margin-left: 50px;
+
+}
+
+/* Dropdown boyutu */
+.ui.selection.dropdown {
+  font-size: 14px; /* İstediğiniz boyut */
+  font-weight: bold;
+}
+
+/* Dropdown içerisindeki seçeneklerin boyutu */
+.ui.selection.dropdown .menu {
+  margin: 0 0.25em 0 0;
+  padding: 0.78em 1.5em 0.78em;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Dropdown içerisindeki seçeneklerin hover durumunun boyutu (isteğe bağlı) */
+.ui.selection.dropdown .menu .item:hover {
+  font-size: 14px;
+  font-weight: bold; /* İstediğiniz boyut */
+}
+
+input{
+  margin: 0 0.25em 0 0;
+  padding: 0.78em 1.5em 0.78em;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px !important;
+}
+
+.task{
+  margin: 0 0.25em 0 0;
+  padding: 0.78em 1.5em 0.78em;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px !important;
+  width: 2000px;
+}
+
+.todo{
+  margin-bottom: 8px;
+}
+
+.ui.input input::placeholder {
+  color: black !important;
+  text-align: center;
+}
+
+span{
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+button{
+  margin-left: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+      background-size: 100% 100%;
+  }
 }
 
 code {
